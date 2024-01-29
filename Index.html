@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eddy portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="Index.html">About</a></li>
+                    <li><a href="Index.html">services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">contanct</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Information Technology Consoltant</p>
+                <h1>Hi,I'm <span>MINION BOB</span> <br> from Nairobi,Kenya</h1>
+            </div>
+               
+        </div>
+
+    </div>
+<!------------------about--------------- -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/about me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    
+                    <p>Cheki fala amekam na amezubaa
+                        Na anacheki ati Subaru ya mambaru
+                        Imekam na imejaa
+                        Subaru ya mambaru imekam na imejaa
+                        Subaru ya mambaru imekam na imejaa
+                        Cheki fala amekam na amezubaa</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Building and maintaining websites and web applications.</li>
+                                <li><span>Networking</span><br>Understanding of networking concepts, protocols, and the ability to configure and troubleshoot network infrastructure.</li>
+                                <li><span>Database Management</span><br>Proficiency in managing databases</li>
+                            </ul>
+                        </div> 
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>agergrergarg</span><br>argagagrrag</li>
+                                <li><span>Netw4h5ng</span><br>gaehe</li>
+                                <li><span>Datab4h5w54t</span><br>Profich4w4hh45databases</li>
+                            </ul>
+                        </div> 
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>Web w4h545wh</span><br>Buierhrteh.</li>
+                                <li><span>Nwht5</span><br>Uawrgae</li>
+                                <li><span>Dah5w5ht</span><br>Profehwtwh5wehs</li>
+                            </ul>
+                        </div> 
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!------------------Java script--------------- -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+ 
+     </script>
+</body>
+</html>    
+
